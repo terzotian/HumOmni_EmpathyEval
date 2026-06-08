@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "Context 1_Candidate Responses_A.wav": {
+      "samplerate": 24000,
+      "channels": 1,
+      "duration_sec": 25.01,
+      "size_kb": 1176.4
+    },
+    "Context 1_Candidate Responses_B.wav": {
+      "samplerate": 24000,
+      "channels": 1,
+      "duration_sec": 15.81,
+      "size_kb": 741.2
+    },
+    "Context 2_Candidate Responses_A.wav": {
+      "samplerate": 24000,
+      "channels": 1,
+      "duration_sec": 32.85,
+      "size_kb": 1539.9
+    },
+    "Context 2_Candidate Responses_B.wav": {
+      "samplerate": 24000,
+      "channels": 1,
+      "duration_sec": 20.97,
+      "size_kb": 983.1
+    },
+    "Utterance Audio.wav": {
+      "samplerate": 48000,
+      "channels": 6,
+      "duration_sec": 1.7,
+      "size_kb": 961.5
+    }
+  },
+  "transcripts": {
+    "Context 1_Candidate Responses_A.wav": "That's so exciting! Getting your nails done can be a really fun and relaxing experience, especially for your first time. I hope you enjoy every moment of the pampering. Any idea what kind of look you're going for with your manicure?",
+    "Context 1_Candidate Responses_B.wav": "Oh, that's so exciting! Getting your nails done can be a really fun and relaxing experience, especially for your first time. I hope you enjoy every moment of the pampering. Any idea what kind of look you're going for with your manicure?",
+    "Context 2_Candidate Responses_A.wav": "It sounds like you've got quite the memorable week ahead of you. It might feel a bit out of your comfort zone, but who knows, you might end up having a bit of fun with it. Plus, it's all in good spirit, right? Baby, you could even use this as an opportunity to rock that glittery look with confidence.",
+    "Context 2_Candidate Responses_B.wav": "Yeah, I hear you. It sounds like you've got quite the memorable week ahead of you. It might be a bit out of your comfort zone, but who knows. You might actually have some fun with it. It's all in good spirit, right? Maybe even take it as a chance to rock that glittery look with confidence.",
+    "Utterance Audio.wav": "I can't believe I'm getting my nails done."
+  }
+}

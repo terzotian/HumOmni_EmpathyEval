@@ -1,0 +1,14 @@
+# Hugging Face dataset repo
+# https://huggingface.co/datasets/gracehuggingface/EmpathyEval
+repo_id: "gracehuggingface/EmpathyEval"
+
+# Where to save files inside this project
+local_dir: "data/raw"
+
+# Optional: only download specific patterns (leave empty to download all)
+# include_patterns:
+#   - "*.jsonl"
+#   - "*.zip"
+
+# Public dataset; set true only if using a private fork
+private: false

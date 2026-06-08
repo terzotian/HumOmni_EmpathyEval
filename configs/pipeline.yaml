@@ -1,0 +1,39 @@
+# EmpathyEval inference pipeline configuration
+
+paths:
+  features_dir: outputs/features
+  predictions_dir: outputs/predictions
+  para_checkpoint: checkpoints/para_classifier.pt
+
+feature_extractor:
+  whisper_model: base          # tiny | base | small | medium
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  para_checkpoint: checkpoints/para_classifier.pt  # optional; uses heuristic if missing
+  skip_asr: false
+
+rules:
+  text_similarity_threshold: 0.85
+  context_variant_semantic_weight: 0.60
+  context_variant_naturalness_weight: 0.40
+  similar_text_semantic_weight: 0.25
+  similar_text_naturalness_weight: 0.75
+  tone_variant_semantic_weight: 0.35
+  tone_variant_naturalness_weight: 0.65
+
+qwen:
+  enabled: false               # TRAINING / DEBUG ONLY — competition forbids API on test data
+  model: qwen-plus             # qwen-plus | qwen-max | qwen-turbo
+  api_key_env: DASHSCOPE_API_KEY
+  temperature: 0.1
+
+train_para:
+  backbone: facebook/wav2vec2-base
+  audio_dirs:
+    - data/extracted/empatheticDialogue_t_multi-context/response_audio
+    - data/extracted/empatheticDialogue_n_multi-emotion/response_audio
+  max_samples_per_class: null  # null = use all; set e.g. 500 for a quick dry-run
+  batch_size: 8
+  epochs: 3
+  learning_rate: 0.0001
+  val_ratio: 0.1
+  seed: 42

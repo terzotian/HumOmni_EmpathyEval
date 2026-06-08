@@ -1,0 +1,34 @@
+# Local Qwen2.5-Omni configuration (COMPLIANT for test inference)
+
+model_id: "Qwen/Qwen2.5-Omni-3B"
+device: auto                  # auto | mps | cuda | cpu
+max_new_tokens: 16
+lora_adapter: null            # e.g. checkpoints/omni_lora (after training)
+
+# Inference scope
+datasets:
+  - gigaspeech
+  - meld
+  - emovdb
+
+train:
+  output_dir: checkpoints/omni_lora
+  sft_dataset: outputs/training/sft_train.jsonl
+  tasks:
+    - context_variant
+    - tone_variant
+  limit: null                   # set e.g. 200 for dry-run
+  lora_r: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  epochs: 1
+  batch_size: 1
+  learning_rate: 0.0002
+  gradient_accumulation_steps: 8
+
+api_training:
+  enabled: false
+  model: qwen-plus
+  output: outputs/training/api_labels.jsonl
+  limit: 50                   # API calls; training data only
+  temperature: 0.1

@@ -1,0 +1,52 @@
+[
+  {
+    "question_id": "demo_context_1",
+    "dataset": "demo",
+    "group_id": "demo_task1",
+    "choice": "opt-B",
+    "source": "rules",
+    "reason": "semantic=0.000 (w=0.25), naturalness=0.487 (w=0.75), option_text_sim=0.997",
+    "rule_winner": "opt-B",
+    "rule_scores": [
+      {
+        "option_key": "opt-B",
+        "semantic": 0.0,
+        "naturalness": 0.4866907000541687,
+        "combined": 0.3650180250406265,
+        "rationale": "semantic=0.000 (w=0.25), naturalness=0.487 (w=0.75), option_text_sim=0.997"
+      },
+      {
+        "option_key": "opt-A",
+        "semantic": 0.0,
+        "naturalness": 0.2332063913345337,
+        "combined": 0.17490479350090027,
+        "rationale": "semantic=0.000 (w=0.25), naturalness=0.233 (w=0.75), option_text_sim=0.997"
+      }
+    ]
+  },
+  {
+    "question_id": "demo_context_2",
+    "dataset": "demo",
+    "group_id": "demo_task1",
+    "choice": "opt-B",
+    "source": "rules",
+    "reason": "semantic=0.000 (w=0.25), naturalness=0.321 (w=0.75), option_text_sim=0.973",
+    "rule_winner": "opt-B",
+    "rule_scores": [
+      {
+        "option_key": "opt-B",
+        "semantic": 0.0,
+        "naturalness": 0.3212907016277313,
+        "combined": 0.2409680262207985,
+        "rationale": "semantic=0.000 (w=0.25), naturalness=0.321 (w=0.75), option_text_sim=0.973"
+      },
+      {
+        "option_key": "opt-A",
+        "semantic": 0.0,
+        "naturalness": 0.2032502442598343,
+        "combined": 0.15243768319487572,
+        "rationale": "semantic=0.000 (w=0.25), naturalness=0.203 (w=0.75), option_text_sim=0.973"
+      }
+    ]
+  }
+]

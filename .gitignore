@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+
+# Data & checkpoints (keep local, do not commit)
+data/
+checkpoints/
+outputs/
+wandb/
+
+# Hugging Face cache (optional; default is ~/.cache/huggingface)
+# HF_HOME=
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
